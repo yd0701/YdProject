@@ -1,3 +1,8 @@
+import os
+import sys
+curPath = os.path.abspath(os.path.dirname(__file__))   #获取当前路径
+rootPath = os.path.split(curPath)[0]    #通过路径切割的方式,获取项目根目录
+sys.path.append(rootPath)  #把项目根目录,添加到环境变量中
 from Interface_api.test_interfaceapi import TestApiDemo
 
 
